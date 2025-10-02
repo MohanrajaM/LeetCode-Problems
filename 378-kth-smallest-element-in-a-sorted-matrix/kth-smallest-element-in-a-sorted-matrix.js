@@ -4,8 +4,6 @@
  * @return {number}
  */
 var kthSmallest = function(matrix, k) {
-  
-
   var margedArray=[]
     for ( var i of matrix){
 
@@ -15,10 +13,7 @@ var kthSmallest = function(matrix, k) {
         
     }
     margedArray = margedArray.sort((a,b)=>a-b);
-
     var output = margedArray[k-1];
-    console.log(margedArray)
-console.log(output)
 
     return output
 };
